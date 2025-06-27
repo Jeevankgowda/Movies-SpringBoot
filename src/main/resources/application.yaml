@@ -13,3 +13,6 @@ spring :
         format_sql: true
 project:
   posterPath: poster/
+
+base:
+  url: "http://localhost:8080"
