@@ -40,7 +40,7 @@ public class FileController {
     public void getFile(@PathVariable String filename, HttpServletResponse response) throws IOException {
 
         InputStream str= fileService.getResourcesFile(path, filename);
-        response.setContentType(MediaType.IMAGE_PNG_VALUE);
+        response.setContentType(MediaType.IMAGE_JPEG_VALUE);
         StreamUtils.copy(str, response.getOutputStream());
     }
 }
